@@ -1,7 +1,7 @@
 /* box_date */
 .box_date{position: absolute; top:53%; left:50%; transform:translate(-50%,-50%);}
 .box_date p.date:first-child{font-size: 15px; text-align: center;}
-.box_date p.date:nth-child(2){margin-top: 30px; font-size:35px;;}
+.box_date p.date:nth-child(2){margin-top: 30px; font-size:50px;}
 
 /* box_calender */
 .box_calender{ position: absolute; top: 250px; bottom:0; width:100%; padding: 15px; margin-top:10px; box-sizing: border-box; opacity: 1; transition: .5s all ease-in-out;}
