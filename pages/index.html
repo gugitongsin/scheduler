@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../script/jquery-1.8.3.min.js"></script>
+    <script src="../script/main.js"></script>
+</head>
+<body>
+    <!-- landing page -->
+
+    <!-- s: wrap -->
+    <div class="wrap">
+
+        <!-- s: pass -->
+        <div class="pass">
+            <div class="box_img">
+                <img src="../img/good.png" alt="좋아요 아이콘">
+            </div>
+            <!-- ajax 부분, 스케줄러 요청 -->
+            <form action="./username" method="GET">
+                <input type="text">
+                <button></button>
+            </form>
+        </div>
+        <!-- e: pass -->
+
+        <!-- s: box_date -->
+        <div class="box_date">
+
+        </div>
+
+        <!-- s: box_calender -->
+        <div class="box_calender">
+            <div class="row day">
+                <div class="col">일</div>
+                <div class="col">월</div>
+                <div class="col">화</div>
+                <div class="col">수</div>
+                <div class="col">목</div>
+                <div class="col">금</div>
+                <div class="col">토</div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">09</span>
+                    <span class="date holiday">27</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">09</span>
+                    <span class="date">28</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">09</span>
+                    <span class="date">29</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">09</span>
+                    <span class="date holiday">30</span>
+                    <div class="box_content">
+                        <span class="notice">추석</span>
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date holiday">01</span>
+                    <div class="box_content">
+                        <span class="notice">추석</span>
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date holiday">02</span>
+                    <div class="box_content">
+                        <span class="notice">추석</span>
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date holiday">03</span>
+                    <div class="box_content">
+                        <span class="notice">추석</span>
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date holiday">04</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">05</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">06</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">07</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">08</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date holiday">09</span>
+                    <div class="box_content">
+                        <span class="notice">한글날</span>
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">10</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date holiday">11</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">12</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">13</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">14</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">15</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">16</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">17</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date holiday">18</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">19</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">20</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">21</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">22</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion">1.5</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">23</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="year txt_hidden">2020</span>
+                    <span class="month txt_hidden">10</span>
+                    <span class="date">24</span>
+                    <div class="box_content">
+                        <ul>
+                            <li>
+                                <span class="symbol s_work">W</span>
+                                <span class="value v_work"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_life">L</span>
+                                <span class="value v_life"></span>
+                            </li>
+                            <li>
+                                <span class="symbol s_devotion">D</span>
+                                <span class="value v_devotion"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- e: box_calender -->
+    </div>
+</body>
+</html>

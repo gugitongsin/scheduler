@@ -1,0 +1,29 @@
+/* box_date */
+.box_date{position: absolute; top:53%; left:50%; transform:translate(-50%,-50%);}
+.box_date p.date:first-child{font-size: 15px; text-align: center;}
+.box_date p.date:nth-child(2){margin-top: 30px; font-size:35px;;}
+
+/* box_calender */
+.box_calender{ position: absolute; top: 250px; bottom:0; width:100%; padding: 15px; margin-top:10px; box-sizing: border-box; opacity: 0; transition: .5s all ease-in-out;}
+.box_calender.on{display:block; opacity: 1;}
+.box_calender .row{display:flex; height:100px; border-bottom: 0.5px solid #999; }
+.box_calender .row:first-child{border-top: 0.5px solid #999; height:30px; font-size: 10px; text-align: center; line-height:30px; color:#888;}
+/* col */
+.box_calender .row .col{flex: 1; position:relative; }
+.box_calender .row .col .date{position: absolute; top:5px; left:50%; transform:translate(-50%); font-size: 12px;}
+.box_calender .row .col .date.holiday{color:red;}
+.box_calender .row .col:nth-child(1){border-left: 0.5px solid #999;}
+.box_calender .row .col:last-child{border-right:0.5px solid #999;}
+.box_calender .row .col+.col{ border-left : 0.5px solid #999;}
+/* box_content */
+.box_calender .row .col .box_content{position: relative; text-indent: 4px; margin-top: 15px;}
+.box_calender .row .col .box_content .notice{width: 100%; position:absolute; bottom:-15px;left:0; text-align:center; font-size: 10px; color:red;}
+.box_calender .row .col .box_content > ul{margin-top: -5px;}
+.box_calender .row .col .box_content > ul > li{}
+.box_calender .row .col .box_content > ul > li > span.symbol{font-size:10px; color:#fff; background:#222; display:inline-block; width:15px; height:15px; line-height:15px; border-radius: 100%; text-align:left;}
+.box_calender .row .col .box_content > ul > li > span.symbol.s_work{background-color:#393e46; text-indent:3px;}
+.box_calender .row .col .box_content > ul > li > span.symbol.s_life{background-color:#fe7171;}
+.box_calender .row .col .box_content > ul > li > span.symbol.s_devotion{background-color:#00adb5;}
+.box_calender .row .col .box_content > ul > li > span.value{color:#393b44; font-size: 12px; font-weight: bold;}
+
+
