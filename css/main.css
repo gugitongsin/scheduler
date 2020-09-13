@@ -1,10 +1,12 @@
 /* box_date */
 .box_date{position: absolute; top:53%; left:50%; transform:translate(-50%,-50%);}
+.box_date.on{bottom:30px; top:auto;}
+.box_date.off{display:none;}
 .box_date p.date:first-child{font-size: 15px; text-align: center;}
 .box_date p.date:nth-child(2){margin-top: 30px; font-size:50px;}
 
 /* box_calender */
-.box_calender{ position: absolute; top: 250px; bottom:0; width:100%; padding: 15px; margin-top:10px; box-sizing: border-box; opacity: 1; transition: .5s all ease-in-out;}
+.box_calender{ display:none; position: absolute; top: 250px; bottom:0; width:100%; padding: 15px; margin-top:10px; box-sizing: border-box; opacity: 0; transition: .5s all ease-in-out;}
 .box_calender.on{display:block; opacity: 1;}
 .box_calender .row{display:flex; height:100px; border-bottom: 0.5px solid #999; }
 .box_calender .row:first-child{border-top: 0.5px solid #999; height:30px; font-size: 10px; text-align: center; line-height:30px; color:#888;}

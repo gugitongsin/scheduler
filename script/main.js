@@ -37,3 +37,22 @@ function timer(){
         timer();
     }, 1000);
 }
+
+function httpGet(url, successCallback, errorCallback){
+    const req = new XMLHttpRequest();
+    req.onload = () =>{
+        if(req.status >= 200 && req.status < 300){
+            successCallback(req.response);
+        }else{
+            errorCallback(new Error(req.statusText));
+        }
+    }
+    req.error = errorCallback;
+    req.open('GET', url);
+    req.setRequestHeader('Accept', 'application/json');
+    req.send();
+}
+
+httpGet('../css/reset.css', data => {
+    console.log(data);
+}, error => alert(error) );
