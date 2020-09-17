@@ -42,7 +42,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-a{text-decoration: none;}
+a{text-decoration: none; color:inherit;}
 li{list-style:none;}
 input{border: 0; border-radius: 5px;}
 button{border: 0; border-radius: 10px;}

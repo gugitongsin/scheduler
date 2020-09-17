@@ -2,244 +2,283 @@
     "year" : 2020,
     "month" : 10,
     "day_start" : "Thu",
-    "01" : {
-        "W" : 0,
-        "W_Content" : "",
-        "L" : 0,
-        "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+    "1" : {
+        "W" : 6,
+        "W_Content" : "4h BKR,1h BKR,2h BKR",
+        "L" : 12,
+        "L_Content" : "12h 잠",
+        "C" : 2,
+        "C_Content" : "1h 미분, 1h script",
+        "notice" : "추석"
     },
-    "02" : {
+    "2" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : "추석"
     },
-    "03" : {
+    "3" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : "추석"
     },
-    "04" : {
+    "4" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : "추석"
     },
-    "05" : {
+    "5" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
-    "06" : {
+    "6" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
-    "07" : {
+    "7" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
-    "08" : {
+    "8" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
-    "09" : {
+    "9" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : "한글날"
     },
     "10" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "11" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "12" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "13" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "14" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "15" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "16" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "17" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "18" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "19" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
+    },
+    "20" : {
+        "W" : 0,
+        "W_Content" : "",
+        "L" : 0,
+        "L_Content" : "",
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "21" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "22" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "23" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "24" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "25" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : "독도의 날"
     },
     "26" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "27" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "28" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "29" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "30" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     },
     "31" : {
         "W" : 0,
         "W_Content" : "",
         "L" : 0,
         "L_Content" : "",
-        "A" : 0,
-        "A_Content" : ""
+        "C" : 0,
+        "C_Content" : "",
+        "notice" : ""
     }
 }

@@ -8,24 +8,46 @@
 /* box_calender */
 .box_calender{ display:none; position: absolute; top: 250px; bottom:0; width:100%; padding: 15px; margin-top:10px; box-sizing: border-box; opacity: 0; transition: .5s all ease-in-out;}
 .box_calender.on{display:block; opacity: 1;}
-.box_calender .row{display:flex; height:100px; border-bottom: 0.5px solid #999; }
+.box_calender .row{display:flex; height:85px; border-bottom: 0.5px solid #999; }
 .box_calender .row:first-child{border-top: 0.5px solid #999; height:30px; font-size: 10px; text-align: center; line-height:30px; color:#888;}
 /* col */
-.box_calender .row .col{flex: 1; position:relative; }
-.box_calender .row .col .date{position: absolute; top:5px; left:50%; transform:translate(-50%); font-size: 12px;}
+.box_calender .row .col{flex: 1; position:relative;}
+.box_calender .row .col .date{position: absolute; top:2px; left:50%; transform:translate(-50%); font-size: 12px;}
 .box_calender .row .col .date.holiday{color:red;}
 .box_calender .row .col:nth-child(1){border-left: 0.5px solid #999;}
 .box_calender .row .col:last-child{border-right:0.5px solid #999;}
 .box_calender .row .col+.col{ border-left : 0.5px solid #999;}
 /* box_content */
-.box_calender .row .col .box_content{position: relative; text-indent: 4px; margin-top: 15px;}
-.box_calender .row .col .box_content .notice{width: 100%; position:absolute; bottom:-15px;left:0; text-align:center; font-size: 10px; color:red;}
-.box_calender .row .col .box_content > ul{margin-top: -5px;}
-.box_calender .row .col .box_content > ul > li{}
-.box_calender .row .col .box_content > ul > li > span.symbol{font-size:10px; color:#fff; background:#222; display:inline-block; width:15px; height:15px; line-height:15px; border-radius: 100%; text-align:left;}
+.box_calender .row .col .box_content{position: relative; text-indent: 4px; margin-top: 18px;}
+.box_calender .row .col .box_content .notice{width: 100%; position:absolute; bottom:-12px;left:0; text-align:center; font-size: 10px; color:red;}
+.box_calender .row .col .box_content > ul{margin-top: -2px;}
+.box_calender .row .col .box_content > ul > li{padding-left: 2.5px;}
+.box_calender .row .col .box_content > ul > li > span.symbol{font-size:8px; color:#fff; background:#222; display:inline-block; width:14px; height:14px; line-height:14px; border-radius: 100%; text-align:left; margin-right:4px;}
 .box_calender .row .col .box_content > ul > li > span.symbol.s_work{background-color:#393e46; text-indent:3px;}
 .box_calender .row .col .box_content > ul > li > span.symbol.s_life{background-color:#fe7171;}
-.box_calender .row .col .box_content > ul > li > span.symbol.s_devotion{background-color:#00adb5;}
-.box_calender .row .col .box_content > ul > li > span.value{color:#393b44; font-size: 12px; font-weight: bold;}
-
+.box_calender .row .col .box_content > ul > li > span.symbol.s_career{background-color:#00adb5;}
+.box_calender .row .col .box_content > ul > li > span.value{color:#393b44; font-size: 11px; font-weight: bold;}
+/* box_detail */
+.box_detail{width:100%; height:100%; position:absolute; background:#fff; top:0; left:-100%; transition: all .4s; padding-top: 40px; box-sizing: border-box;}
+.box_detail.on{left:0;}
+.box_detail > div{border-bottom: 1px solid #ccc; height:50px; overflow:hidden;}
+.box_detail > div.on{height:200px; overflow:auto; transition: all .5s;}
+.box_detail > div:first-child{border-top:1px solid #ccc;}
+.box_detail .box_title{position:relative; height: 50px; line-height: 50px; padding: 0 10px; box-sizing: border-box;}
+.box_detail .box_title .label{}
+.box_detail .box_title .txt_total{position:absolute; right:55px;}
+.box_detail .box_title .btn_more{position:absolute; top:50%; right:5px; transform: translate(-50%,-50%); width:25px; height:25px; background-color:#393b44; border-radius:50%;}
+.box_detail .box_title .btn_more:after{content: ''; display:block; width:12px; height:2px; background:#fff; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); border-radius: 1px; }
+.box_detail .box_title .btn_more:before{content: ''; display:block; width:2px; height:12px; background:#fff; position:absolute; top:7px; left:12px; transform: rotate(90) translate(-50%,-50%); border-radius: 1px;}
+.box_detail .box_content{height:150px; background:#bbb; position:relative;}
+.box_detail .box_content > ul.list_content{padding: 15px; font-size: 11px;}
+.box_detail .box_content > ul.list_content > li{float:left; width: 25%; margin: 20px 0;}
+.box_detail .box_content > ul.list_content > li > span.content{border:1px solid #fff; padding: 5px 7px; border-radius: 10px; color:#fff;}
+.box_detail .box_content .box_newContent{width:100%; position:absolute; bottom:0; text-align: center;}
+.box_detail .box_content .box_newContent:before{content:'h'; display:block; position: absolute; left: 89px; bottom:5px; color:#fff; font-size: 11px;}
+.box_detail .box_content .box_newContent input[type="text"]{margin: 5px 10px; height: 20px;}
+.box_detail .box_content .box_newContent .ipt_hour{position:relative; width:30px; text-align: center;}
+.box_detail .box_content .box_newContent .ipt_content{padding-left:10px;}
+.box_detail .box_content .box_newContent .btn_submit{vertical-align: middle; color:#222; height:22px; font-size: 11px; font-weight: 600;}
+.box_detail .btn_save{float:right; margin: 10px 20px 0 0; height:25px; background:#393e46; color:#fff; font-size: 11px;}
 
