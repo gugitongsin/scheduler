@@ -27,48 +27,57 @@ $(function(){
     })
 
     $('a.col').on('click', function(){
+        
         targetDate = $(this).find('span.date').text();
-        if( targetDate.length > 0 ) $('.box_detail').addClass('on');
-        httpGet(url, data => {
-            var obj = JSON.parse(data);
-            const wHour = obj[targetDate].W;
-            const lHour = obj[targetDate].L;
-            const cHour = obj[targetDate].C;
-            const wContent = obj[targetDate].W_Content.split(",");
-            const lContent = obj[targetDate].L_Content.split(",");
-            const cContent = obj[targetDate].C_Content.split(",");
-            $('.t_work .txt_total').text(wHour);
-            $('.t_life .txt_total').text(lHour);
-            $('.t_career .txt_total').text(cHour);
-            
-            for(var i=0; i<wContent.length; i++){
-                $('.c_work .list_content').append(`
-                    <li>
-                        <span class="content">${wContent[i]}</span>
-                    </li>
-                `)
-            }
-            for(var i=0; i<lContent.length; i++){
-                $('.c_life .list_content').append(`
-                    <li>
-                        <span class="content">${lContent[i]}</span>
-                    </li>
-                `)
-            }
-            for(var i=0; i<cContent.length; i++){
-                $('.c_career .list_content').append(`
-                    <li>
-                        <span class="content">${cContent[i]}</span>
-                    </li>
-                `)
-            }
-        }, error => alert("사용자 정보를 불러올 수 없습니다.") );
+        if( targetDate.length > 0 ) {
+            $('.box_detail').addClass('on');
+            httpGet(url, data => {
+                var obj = JSON.parse(data);
+                const wHour = obj[targetDate].W;
+                const lHour = obj[targetDate].L;
+                const cHour = obj[targetDate].C;
+                const wContent = obj[targetDate].W_Content.split(",");
+                const lContent = obj[targetDate].L_Content.split(",");
+                const cContent = obj[targetDate].C_Content.split(",");
+                $('.t_work .txt_total').text(wHour);
+                $('.t_life .txt_total').text(lHour);
+                $('.t_career .txt_total').text(cHour);
+                $('.c_work .list_content li').remove();
+                $('.c_life .list_content li').remove();
+                $('.c_career .list_content li').remove();
+                for(var i=0; i<wContent.length; i++){
+                    $('.c_work .list_content').append(`
+                        <li>
+                            <span class="content">${wContent[i]}</span>
+                        </li>
+                    `)
+                }
+                for(var i=0; i<lContent.length; i++){
+                    $('.c_life .list_content').append(`
+                        <li>
+                            <span class="content">${lContent[i]}</span>
+                        </li>
+                    `)
+                }
+                for(var i=0; i<cContent.length; i++){
+                    $('.c_career .list_content').append(`
+                        <li>
+                            <span class="content">${cContent[i]}</span>
+                        </li>
+                    `)
+                }
+            }, error => alert("사용자 정보를 불러올 수 없습니다.") );
+        }
     })
 
     $('.btn_more').on('click', function(){
         $('.box_detail > div').removeClass('on');
-        var idx = $(this).parent().parent().index();
+        var idx = $(this).parent().parent().index()-1;
         $('.box_detail > div').eq(idx).addClass('on');
+    })
+
+    $('.btn_close').on('click', function(){
+        $('.box_detail').removeClass("on");
     })
     $('.btn_save').on('click', function(){
         
@@ -190,4 +199,7 @@ function renderData(d){
         }
     }
 }
+//content 를 json 형태로 전송
+function postData(data){
 
+}

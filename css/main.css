@@ -1,9 +1,11 @@
 /* box_date */
-.box_date{position: absolute; top:53%; left:50%; transform:translate(-50%,-50%);}
+.box_date{position: absolute; top:53%; left:50%; transform:translate(-50%,-50%); transition:all 1s;}
 .box_date.on{bottom:30px; top:auto;}
-.box_date.off{display:none;}
+.box_date.off{bottom:auto; top:10px; left:50%; z-index:99;}
 .box_date p.date:first-child{font-size: 15px; text-align: center;}
 .box_date p.date:nth-child(2){margin-top: 30px; font-size:50px;}
+.box_date.off p.date:first-child{margin-top:20px;}
+.box_date.off p.date:nth-child(2){position:absolute; top:10px; left:25px; font-size: 15px;}
 
 /* box_calender */
 .box_calender{ display:none; position: absolute; top: 250px; bottom:0; width:100%; padding: 15px; margin-top:10px; box-sizing: border-box; opacity: 0; transition: .5s all ease-in-out;}
@@ -30,7 +32,8 @@
 /* box_detail */
 .box_detail{width:100%; height:100%; position:absolute; background:#fff; top:0; left:-100%; transition: all .4s; padding-top: 40px; box-sizing: border-box;}
 .box_detail.on{left:0;}
-.box_detail > div{border-bottom: 1px solid #ccc; height:50px; overflow:hidden;}
+.box_detail .btn_close{position:absolute; top:10px; right:10px;}
+.box_detail > div{border-bottom: 1px solid #ccc; height:50px; overflow:hidden; transition:all .5s;}
 .box_detail > div.on{height:200px; overflow:auto; transition: all .5s;}
 .box_detail > div:first-child{border-top:1px solid #ccc;}
 .box_detail .box_title{position:relative; height: 50px; line-height: 50px; padding: 0 10px; box-sizing: border-box;}
