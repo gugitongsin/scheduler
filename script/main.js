@@ -9,7 +9,6 @@ var id = "";
 var url = "";
 var targetDate = "";
 
-
 //onload entry
 $(function(){
     init_timer();
@@ -29,6 +28,7 @@ $(function(){
     $('a.col').on('click', function(){
         
         targetDate = $(this).find('span.date').text();
+        
         if( targetDate.length > 0 ) {
             $('.box_detail').addClass('on');
             httpGet(url, data => {
@@ -49,6 +49,7 @@ $(function(){
                     $('.c_work .list_content').append(`
                         <li>
                             <span class="content">${wContent[i]}</span>
+                            <button class="btn_remove">x</button>
                         </li>
                     `)
                 }
@@ -56,6 +57,7 @@ $(function(){
                     $('.c_life .list_content').append(`
                         <li>
                             <span class="content">${lContent[i]}</span>
+                            <button class="btn_remove">x</button>
                         </li>
                     `)
                 }
@@ -63,12 +65,25 @@ $(function(){
                     $('.c_career .list_content').append(`
                         <li>
                             <span class="content">${cContent[i]}</span>
+                            <button class="btn_remove">x</button>
                         </li>
                     `)
                 }
+
+                $('.btn_remove').on('click', function(){
+                    var content = $(this).prev().text();
+                    content = content.split('h')[0];
+                    var total = $(this).parent().parent().parent().prev().find('.txt_total');
+                    var newTotal = total.text() - content;
+                    total.text(newTotal);
+                    $(this).parent().remove();
+                });
+                
             }, error => alert("사용자 정보를 불러올 수 없습니다.") );
         }
     })
+
+    
 
     $('.btn_more').on('click', function(){
         $('.box_detail > div').removeClass('on');
@@ -79,11 +94,67 @@ $(function(){
     $('.btn_close').on('click', function(){
         $('.box_detail').removeClass("on");
     })
+
+    $('.btn_add').on('click',function(){
+        var h = $('.ipt_hour').val();
+        var c = $('.ipt_content').val();
+        var full = h + "h " + c;
+
+        $(this).parent().prev().append(
+            `<li>
+                <span class="content">${full}</span>
+                <button class="btn_remove">x</button>
+            </li>`
+        )
+
+        var total = $(this).parent().parent().prev().find('.txt_total');
+        var newTotal = parseInt(total.text(),10) + parseInt(h, 10);
+        total.text(newTotal);
+
+        $('.btn_remove').on('click', function(){
+            var content = $(this).prev().text();
+            content = content.split('h')[0];
+            var total = $(this).parent().parent().parent().prev().find('.txt_total');
+            var newTotal = total.text() - content;
+            total.text(newTotal);
+            $(this).parent().remove();
+        });
+    })
+
+
     $('.btn_save').on('click', function(){
-        
+        // contents 부분에있는 정보를 json으로 변환
+        var strDate = addZero(parseInt(targetDate));
+        var wHour = $('.t_work .txt_total').text();
+        var lHour = $('.t_life .txt_total').text();
+        var cHour = $('.t_career .txt_total').text();
+        var wContent = ""
+        $('.c_work > ul > li > span').each(function(){
+            wContent+= $(this).text()+",";
+        });
+        var lContent =""
+        $('.c_life > ul > li > span').each(function(){
+            lContent+= $(this).text()+",";
+        });
+        var cContent = "";
+        $('.c_career > ul > li > span').each(function(){
+            cContent+= $(this).text()+",";
+        });
+        var obj = {
+            "date" : strDate,
+            "W" :  wHour,
+            "L" :  lHour,
+            "C" :  cHour,
+            "W_Content" : wContent,
+            "L_Content" : lContent,
+            "C_Content" : cContent,
+        }
+        var data= JSON.stringify(obj);
+        console.log(data)
+
+        var xhr = $.post("http://127.0.0.1:987/json", obj);
     })
 })
-
 
 
 // function def
@@ -173,6 +244,7 @@ function httpGet(url, successCallback, errorCallback){
     req.setRequestHeader('Accept', 'application/json');
     req.send();
 }
+
 // json을 스케줄러에 rendering 하는 함수
 function renderData(d){
     var obj = JSON.parse(d);
