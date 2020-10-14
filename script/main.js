@@ -3,14 +3,14 @@ var User = {
     //name
     //data
 };
-const SERVER_IP = "114.129.111.24:987";
+const SERVER_IP = "114.129.111.24:5000";
 //const SERVER_IP = "http://127.0.0.1:987";
 
 //onload entry
 $(function(){
     $(".btn_find").on("click", function(){
         User.name = $(".ipt_id").val()
-        getHTTP(SERVER_IP+"/userinfo");
+        getHTTP(SERVER_IP);
 
         $(".box_calender").addClass("on")
     })
@@ -29,13 +29,13 @@ $(function(){
 //http Get request function
 var getHTTP = (target) => {
     $.ajax({
-        url : target,
+        url : target+"/get/202010"+User.name,
         type : "GET",
         cache : false,
         data: "name="+User.name,
         success : function(data){
             User.data = data;
-            console.log("300:"+data)
+            console.log(User)
         },
         error : function(request, status, error){
             var msg = "ERROR: get request failed"+ error;
